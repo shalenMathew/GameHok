@@ -7,3 +7,6 @@
 - Hilt - Dependency injection for efficient DI management
 - Coil - Fast and lightweight image loading library
 - Retrofit - Type-safe HTTP client for network operations
+
+  [![Static Badge](https://img.shields.io/badge/GameHok-APK-red?logo=android)]()
+
