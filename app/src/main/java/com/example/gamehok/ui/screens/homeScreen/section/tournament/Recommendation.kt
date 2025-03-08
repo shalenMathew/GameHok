@@ -22,6 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.example.gamehok.R
 import com.example.gamehok.data.model.TournamentsItem
 import com.example.gamehok.ui.theme.robotoFontFamily
@@ -29,7 +30,7 @@ import com.example.gamehok.utils.navigation.Routes
 import com.example.gamehok.viewmodel.AppViewModel
 
 @Composable
-fun Recommandation(appViewModel: AppViewModel= hiltViewModel(),currItem: TournamentsItem?) {
+fun Recommandation(appViewModel: AppViewModel= hiltViewModel(),currItem: TournamentsItem?,navController:NavController) {
 
     val state = appViewModel.state.value
 
@@ -79,26 +80,26 @@ fun Recommandation(appViewModel: AppViewModel= hiltViewModel(),currItem: Tournam
                             1304 -> {
                                 TournamentItem(item,R.drawable.pg_2,
                                     onItemClick = {
-//                                    navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
-//                                    navController.navigate(Routes.TournamentDetailScreen.route)
+                                    navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
+                                    navController.navigate(Routes.TournamentDetailScreen.route)
                                     })
                             }
                             1302 -> {
                                 TournamentItem(item,R.drawable.ff_2, onItemClick = {
-//                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
-//                                navController.navigate(Routes.TournamentDetailScreen.route)
+                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
+                                navController.navigate(Routes.TournamentDetailScreen.route)
                                 })
                             }
                             1305 -> {
                                 TournamentItem(item,R.drawable.pg_1, onItemClick = {
-//                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
-//                                navController.navigate(Routes.TournamentDetailScreen.route)
+                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
+                                navController.navigate(Routes.TournamentDetailScreen.route)
                                 })
                             }
                             1303 -> {
                                 TournamentItem(item,R.drawable.ff_1, onItemClick = {
-//                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
-//                                navController.navigate(Routes.TournamentDetailScreen.route)
+                                navController.currentBackStackEntry?.savedStateHandle?.set("tournament", item)
+                                navController.navigate(Routes.TournamentDetailScreen.route)
                                 })
                             }
                         }

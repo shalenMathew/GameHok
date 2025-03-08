@@ -83,7 +83,7 @@ fun TournamentDetailScreen(navController: NavController) {
 
         item{DetailCard()}
 
-        item{Recommandation(currItem = item)}
+        item{Recommandation(currItem = item, navController = navController)}
 
     }
 }
