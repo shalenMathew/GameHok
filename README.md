@@ -20,5 +20,8 @@ https://github.com/user-attachments/assets/4aaa8f78-454c-4380-84bb-b987556dbe4d
 ## Note
 Due to time constraints and the project's large scope, I couldn't implement the Popular Games section. I had some interesting ideas for it and would love to explore them in the future.
 
+## Installation
+- Fork & Clone the project 
+
  
 
