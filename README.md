@@ -13,5 +13,8 @@
 - Coil - Fast and lightweight image loading library
 - Retrofit - Type-safe HTTP client for network operations
 
+## Note
+Due to time constraints and the project's large scope, I couldn't implement the Popular Games section. I had some interesting ideas for it and would love to explore them in the future.
+
  
 
